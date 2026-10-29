@@ -1,0 +1,18 @@
+{
+  "name": "@portfolio/database",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "migrate": "tsx src/migrate.ts"
+  },
+  "dependencies": {
+    "@portfolio/contracts": "workspace:*",
+    "drizzle-orm": "^0.44.5",
+    "postgres": "^3.4.7",
+    "dotenv": "^16.6.1"
+  }
+}

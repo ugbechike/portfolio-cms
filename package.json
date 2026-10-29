@@ -1,0 +1,32 @@
+{
+  "name": "portfolio-cms",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22.20.0"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @portfolio/api --filter @portfolio/cms dev",
+    "build": "pnpm --filter @portfolio/api build && pnpm --filter @portfolio/cms build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "vitest run",
+    "db:migrate": "pnpm --filter @portfolio/database migrate",
+    "import": "node --import tsx scripts/import.ts",
+    "docs:api": "node --import tsx scripts/generate-api-docs.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.6",
+    "vitest": "^3.2.4",
+    "@types/node": "^22.18.0",
+    "@electric-sql/pglite": "^0.3.14",
+    "drizzle-orm": "^0.44.5"
+  },
+  "dependencies": {
+    "@portfolio/content": "workspace:*",
+    "@portfolio/contracts": "workspace:*",
+    "@portfolio/database": "workspace:*",
+    "dotenv": "^16.6.1"
+  },
+  "type": "module"
+}

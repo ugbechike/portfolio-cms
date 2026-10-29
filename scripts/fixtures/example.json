@@ -1,0 +1,21 @@
+{
+  "records": [
+    {
+      "id": "eab22529-485b-4e9e-86cf-9b096ead267b",
+      "updatedAt": "2026-01-01T00:00:00Z",
+      "content": {
+        "kind": "projects",
+        "title": "Synthetic import fixture \u2014 not portfolio content",
+        "slug": "synthetic-import-fixture",
+        "summary": "A schema-validation fixture only. Do not publish as real work.",
+        "sections": [
+          {
+            "type": "text",
+            "title": "Fixture section",
+            "body": "Synthetic sample for testing the importer."
+          }
+        ]
+      }
+    }
+  ]
+}

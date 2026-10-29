@@ -1,0 +1,16 @@
+{
+  "name": "@portfolio/content",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@portfolio/contracts": "workspace:*",
+    "@portfolio/database": "workspace:*",
+    "drizzle-orm": "^0.44.5"
+  }
+}
